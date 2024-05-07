@@ -38,7 +38,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     width={386}
                     quality={100}
                     priority
-                    className="absolute top-14 right-0"
+                    className="absolute top-14 right-0 w-auto"
                 />
 
                 {children}
