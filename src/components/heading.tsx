@@ -8,7 +8,9 @@ export const Heading = () => {
     return (
         <section className="relative flex w-full flex-col gap-8">
             <div className="flex flex-col items-start gap-5">
-                <span className="font-title text-sm font-normal leading-tight text-secondary">Experiencia • Expansão • Expertize</span>
+                <span className="font-title text-sm font-normal leading-tight text-secondary">
+                    Experiencia • Expansão • Expertize
+                </span>
 
                 <h1 className="max-w-xs text-3xl font-semibold leading-snug text-primary">
                     Transformando conceitos em{" "}
@@ -26,9 +28,12 @@ export const Heading = () => {
             <div className="flex flex-col items-start gap-7">
                 <CtaButton label="Vamos trabalhar juntos!" link="/" className="h-auto w-[258px] py-3 text-sm" />
 
-                <Link href="/" className="flex items-center gap-1 text-sm font-medium text-secondary">
+                <Link href="/" className="group flex items-center gap-1 text-sm font-medium text-secondary">
                     <span>Conheça nossas soluções</span>
-                    <ArrowRight size={16} />
+                    <ArrowRight
+                        size={16}
+                        className="transition-all duration-300 ease-in-out group-hover:translate-x-1 -mb-px"
+                    />
                 </Link>
             </div>
         </section>
