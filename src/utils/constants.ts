@@ -4,3 +4,5 @@ export const links = {
     instagram: "https://www.instagram.com/expmarketing.br/",
     facebook: "https://www.facebook.com/agenciadeexpmarketing",
 };
+
+export const HEADER_HEIGHT = "72px";
