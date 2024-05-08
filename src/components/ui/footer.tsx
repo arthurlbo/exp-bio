@@ -28,7 +28,7 @@ export const Footer = () => {
     const year = new Date().getFullYear();
 
     return (
-        <footer className="flex w-full flex-col items-center gap-6">
+        <footer className="flex w-full flex-col items-center gap-6 pb-5">
             <h3 className="text-center font-title text-2xl font-normal text-primary">
                 Estamos{" "}
                 <span className="bg-gradient-to-r  from-accent  to-complementary bg-clip-text  text-transparent">
