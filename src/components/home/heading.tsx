@@ -6,20 +6,20 @@ import { CtaButton } from "@/components";
 
 export const Heading = () => {
     return (
-        <section className="relative flex w-full flex-col gap-8">
+        <section className="flex w-full flex-col gap-8">
             <div className="flex flex-col items-start gap-5">
                 <span className="font-title text-sm font-normal leading-tight text-secondary">
                     Experiencia • Expansão • Expertize
                 </span>
 
-                <h1 className="max-w-xs text-3xl font-semibold leading-snug text-primary">
+                <h1 className="max-w-xs text-3xl font-semibold leading-snug text-primary xs:max-w-md">
                     Transformando conceitos em{" "}
                     <span className="bg-gradient-to-r  from-accent  to-complementary bg-clip-text  text-transparent">
                         sucesso palpável.
                     </span>
                 </h1>
 
-                <p className="max-w-sm text-base font-normal text-secondary">
+                <p className="max-w-sm text-base font-normal text-secondary xs:max-w-md">
                     Nosso compromisso é oferecer soluções inovadoras que agreguem valor à sua marca. Com ações ágeis e
                     estratégicas, focamos em potencializar seus resultados.
                 </p>

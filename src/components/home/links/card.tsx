@@ -18,10 +18,9 @@ export const Card = ({ alt, cover, link }: CardProps) => {
                 src={cover}
                 alt={alt}
                 loading="lazy"
-                placeholder="blur"
                 quality={100}
                 height={150}
-                className="w-full min-h-[150px] rounded-2xl border border-tertiary"
+                className="w-full min-h-[150px] max-h-[150px] rounded-2xl border border-tertiary"
             />
         </Link>
     );

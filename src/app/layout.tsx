@@ -32,13 +32,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 className={`
                     ${poppins.variable}
                     ${museoModerno.variable}
-                    scrollbar
-                    scrollbar-w-2
-                    scrollbar-thumb-slate-600
-                    scrollbar-thumb-rounded-full
                     relative
                     flex
-                    h-screen
+                    min-h-screen
                     w-full
                     max-w-full
                     flex-col
@@ -48,6 +44,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     overflow-x-hidden
                     bg-background
                     font-sans
+                    scrollbar
+                    scrollbar-thumb-slate-600
+                    scrollbar-thumb-rounded-full
+                    scrollbar-w-2
                     selection:bg-complementary/50
                 `}
             >
@@ -58,11 +58,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     alt="Blur"
                     quality={100}
                     priority
-                    className="absolute right-0 top-0 h-full w-full opacity-80"
+                    className="absolute right-0 top-0 -z-10 h-[600px] w-full opacity-80 xs:right-1/2 xs:translate-x-1/2 xs:w-[500px]"
                 />
 
                 <main
-                    className="flex w-full flex-col justify-between gap-8 px-5 pt-5"
+                    className="flex w-full flex-col justify-between gap-8 px-5 pt-5 xs:max-w-[500px] xs:border-x xs:border-x-tertiary"
                     style={{ marginTop: HEADER_HEIGHT, height: `calc(100% - ${HEADER_HEIGHT})` }}
                 >
                     {children}

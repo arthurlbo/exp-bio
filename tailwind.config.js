@@ -38,6 +38,9 @@ module.exports = {
                 sans: "var(--font-poppins)",
                 title: "var(--font-museoModerno)",
             },
+            screens: {
+                xs: { raw: "((min-width: 450px))" },
+            },
         },
     },
     plugins: [require("tailwindcss-animate"), require("tailwind-scrollbar")({ nocompatible: true })],

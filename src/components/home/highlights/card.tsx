@@ -8,7 +8,7 @@ export interface CardProps {
 
 export const Card = ({ icon: Icon, description, value }: CardProps) => {
     return (
-        <div className="flex w-full flex-col items-start justify-start gap-1 rounded-2xl border border-tertiary p-5 pt-[11px] h-[150px] overflow-hidden">
+        <div className="flex w-full flex-col items-start justify-start gap-1 rounded-2xl border border-tertiary p-5 pt-[11px] h-[150px] xs:pt-5 overflow-hidden">
             <div className="relative flex items-center justify-start text-primary">
                 <h2 className="text-[3.7rem] font-medium leading-tight tracking-tighter">{value}</h2>
                 <div
