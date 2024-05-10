@@ -3,7 +3,7 @@ import "./globals.css";
 import Image from "next/image";
 import { Poppins, MuseoModerno } from "next/font/google";
 
-import { HEADER_HEIGHT } from "@/utils";
+import { HEADER_HEIGHT, MAX_WIDTH } from "@/utils";
 
 import { Header } from "@/components";
 
@@ -58,12 +58,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     alt="Blur"
                     quality={100}
                     priority
-                    className="absolute right-0 top-0 -z-10 h-[600px] w-full opacity-80 xs:right-1/2 xs:w-[500px] xs:translate-x-1/2"
+                    className="absolute right-0 top-0 -z-10 h-[600px] w-full opacity-80 xs:right-1/2 xs:translate-x-1/2"
+                    style={{ maxWidth: MAX_WIDTH }}
                 />
 
                 <main
-                    className="flex w-full flex-col justify-between gap-8 px-5 pt-5 xs:max-w-[500px] xs:border-x xs:border-x-tertiary"
-                    style={{ marginTop: HEADER_HEIGHT, height: `calc(100% - ${HEADER_HEIGHT})` }}
+                    className="flex w-full flex-col justify-between gap-8 px-5 pt-5 xs:border-x xs:border-x-tertiary"
+                    style={{ marginTop: HEADER_HEIGHT, height: `calc(100% - ${HEADER_HEIGHT})`, maxWidth: MAX_WIDTH }}
                 >
                     {children}
                 </main>

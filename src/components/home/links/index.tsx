@@ -30,6 +30,9 @@ const linksCards: CardProps[] = [
     },
 ];
 
+/**
+ * Section that will display the main links of the agency.
+ */
 export const Links = () => {
     return (
         <section className="flex w-full flex-col items-start gap-6">

@@ -7,6 +7,9 @@ import { ArrowLeft } from "@phosphor-icons/react";
 
 bouncy.register();
 
+/**
+ * Component that will display a working page while the page is under construction.
+ */
 export const Working = () => {
     return (
         <div className="z-10 flex h-full w-full flex-col items-center justify-center gap-16">

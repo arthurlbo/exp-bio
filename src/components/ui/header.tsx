@@ -1,12 +1,15 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import { HEADER_HEIGHT, links } from "@/utils";
+import { HEADER_HEIGHT, links, MAX_WIDTH } from "@/utils";
 
 import { CtaButton } from "@/components";
 
 import ExpLogo from "@/assets/logo.svg";
 
+/**
+ * Header component for all the pages.
+ */
 export const Header = () => {
     return (
         <header
@@ -27,12 +30,11 @@ export const Header = () => {
                 py-4
                 backdrop-blur-sm
                 xs:left-1/2
-                xs:max-w-[500px]
                 xs:-translate-x-1/2
                 xs:border-x
                 xs:border-x-tertiary
             "
-            style={{ height: HEADER_HEIGHT }}
+            style={{ height: HEADER_HEIGHT, maxWidth: MAX_WIDTH }}
         >
             <Link
                 href="/"

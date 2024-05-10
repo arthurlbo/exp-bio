@@ -20,6 +20,9 @@ const highlightsCards: CardProps[] = [
     },
 ];
 
+/**
+ * Section that will display the highlights of the agency (years of experience, projects completed, etc.)
+ */
 export const Highlights = () => {
     return (
         <section className="flex w-full flex-col items-start gap-6">

@@ -8,6 +8,12 @@ interface CtaButtonProps {
     className?: string;
 }
 
+/**
+ * CTA button component for all the page.
+ * @param label - The label of the button.
+ * @param link - The link that the button will redirect to.
+ * @param className - Custom classes for the button.
+ */
 export const CtaButton = ({ className, label, link }: CtaButtonProps) => {
     return (
         <Link

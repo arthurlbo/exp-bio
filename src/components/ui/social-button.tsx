@@ -7,6 +7,11 @@ export interface SocialButtonProps {
     link: string;
 }
 
+/**
+ * Social button component that will display the agency's social media links.
+ * @param icon - The icon that will be displayed on the button.
+ * @param link - The link that the button will redirect to.
+ */
 export const SocialButton = ({ icon: Icon, link }: SocialButtonProps) => {
     return (
         <Link

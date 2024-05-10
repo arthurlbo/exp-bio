@@ -7,6 +7,12 @@ export interface CardProps {
     alt: string;
 }
 
+/**
+ * Card component that will display the main links of the agency.
+ * @param link - The link that the card will redirect to.
+ * @param cover - The image that will be displayed on the card.
+ * @param alt - The alt text of the image.
+ */
 export const Card = ({ alt, cover, link }: CardProps) => {
     return (
         <Link
