@@ -55,9 +55,9 @@
         "typescript": "5.4.5"
     },
     "eslintConfig": {
-        "eslintConfig": {
-            "extends": "./.eslintrc.json"
-        }
+        "extends": [
+            "./eslint.config.js"
+        ]
     },
     "config": {
         "commitizen": {

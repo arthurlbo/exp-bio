@@ -1,32 +1,24 @@
-{
-    "env": {
-        "browser": true,
-        "es6": true,
-        "node": true
+module.exports = {
+    parser: "@typescript-eslint/parser",
+    parserOptions: {
+        ecmaVersion: 2020,
+        sourceType: "module",
     },
-    "settings": {
-        "react": {
-            "version": "detect"
-        }
+    settings: {
+        react: {
+            version: "detect",
+        },
     },
-    "extends": [
+    extends: [
         "eslint:recommended",
         "plugin:react/recommended",
         "plugin:@typescript-eslint/recommended",
         "plugin:@typescript-eslint/eslint-recommended",
         "plugin:prettier/recommended",
-        "plugin:@next/next/recommended"
+        "plugin:@next/next/recommended",
     ],
-    "parser": "@typescript-eslint/parser",
-    "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-        },
-        "ecmaVersion": 2018,
-        "sourceType": "module"
-    },
-    "plugins": ["react", "react-hooks", "@typescript-eslint", "import"],
-    "rules": {
+    plugins: ["react", "react-hooks", "@typescript-eslint", "import"],
+    rules: {
         "@typescript-eslint/explicit-function-return-type": "off",
         "@typescript-eslint/explicit-member-accessibility": "off",
         "@typescript-eslint/explicit-module-boundary-types": "off",
@@ -35,7 +27,7 @@
         "@typescript-eslint/no-non-null-assertion": "off",
         "@typescript-eslint/no-use-before-define": "off",
         "@typescript-eslint/no-var-requires": "off",
-        "@typescript-eslint/camelcase": "off",
+        "@typescript-eslint/naming-convention": "off",
         "import/prefer-default-export": "off",
         "react-hooks/exhaustive-deps": "warn",
         "react-hooks/rules-of-hooks": "error",
@@ -45,6 +37,7 @@
         "react/prop-types": "off",
         "react/react-in-jsx-scope": "off",
         "react/require-default-props": "off",
-        "import/first": "error"
-    }
-}
+        "import/first": "error",
+        "no-undef": "off",
+    },
+};
