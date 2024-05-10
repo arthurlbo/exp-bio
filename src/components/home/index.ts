@@ -1,3 +1,3 @@
 export * from "./links";
-export * from "./heading";
+export * from "./hero";
 export * from "./highlights";
