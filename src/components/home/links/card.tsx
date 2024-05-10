@@ -12,7 +12,7 @@ export const Card = ({ alt, cover, link }: CardProps) => {
         <Link
             href={link}
             target="_blank"
-            className="group w-full focus:outline-none rounded-2xl focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-background"
+            className="group w-full rounded-2xl focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-background"
         >
             <Image
                 src={cover}
@@ -20,7 +20,7 @@ export const Card = ({ alt, cover, link }: CardProps) => {
                 loading="lazy"
                 quality={100}
                 height={150}
-                className="w-full min-h-[150px] max-h-[150px] rounded-2xl border border-tertiary"
+                className="max-h-[150px] min-h-[150px] w-full rounded-2xl border border-tertiary"
             />
         </Link>
     );

@@ -8,7 +8,7 @@ export interface CardProps {
 
 export const Card = ({ icon: Icon, description, value }: CardProps) => {
     return (
-        <div className="flex w-full flex-col items-start justify-start gap-1 rounded-2xl border border-tertiary p-5 pt-[11px] h-[150px] xs:pt-5 overflow-hidden">
+        <div className="flex h-[150px] w-full flex-col items-start justify-start gap-1 overflow-hidden rounded-2xl border border-tertiary p-5 pt-[11px] xs:pt-5">
             <div className="relative flex items-center justify-start text-primary">
                 <h2 className="text-[3.7rem] font-medium leading-tight tracking-tighter">{value}</h2>
                 <div
@@ -32,7 +32,7 @@ export const Card = ({ icon: Icon, description, value }: CardProps) => {
                 </div>
             </div>
 
-            <span className="text-sm font-normal text-secondary px-1">{description}</span>
+            <span className="px-1 text-sm font-normal text-secondary">{description}</span>
         </div>
     );
 };

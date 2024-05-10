@@ -39,7 +39,9 @@ export const Footer = () => {
 
             <div className="flex w-full items-center justify-center gap-4">
                 {socialButtons.map((button, index) => (
-                    <Fragment key={index}> {/* We had to use the Fragment component instead <></> to fix key warning */}
+                    <Fragment key={index}>
+                        {" "}
+                        {/* We had to use the Fragment component instead <></> to fix key warning */}
                         <SocialButton {...button} />
                         <div className="h-4 w-px flex-shrink-0 bg-tertiary last:hidden" />
                     </Fragment>

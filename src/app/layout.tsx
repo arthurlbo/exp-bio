@@ -58,7 +58,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     alt="Blur"
                     quality={100}
                     priority
-                    className="absolute right-0 top-0 -z-10 h-[600px] w-full opacity-80 xs:right-1/2 xs:translate-x-1/2 xs:w-[500px]"
+                    className="absolute right-0 top-0 -z-10 h-[600px] w-full opacity-80 xs:right-1/2 xs:w-[500px] xs:translate-x-1/2"
                 />
 
                 <main

@@ -22,7 +22,7 @@ const highlightsCards: CardProps[] = [
 
 export const Highlights = () => {
     return (
-        <section className="flex w-full items-start flex-col gap-6">
+        <section className="flex w-full flex-col items-start gap-6">
             {highlightsCards.map((card, index) => (
                 <Card key={index} {...card} />
             ))}

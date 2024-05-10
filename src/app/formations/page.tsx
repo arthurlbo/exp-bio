@@ -9,5 +9,5 @@ export const metadata = {
 };
 
 export default function Formations() {
-    return <Working />
+    return <Working />;
 }

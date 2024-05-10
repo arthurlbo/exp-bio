@@ -26,13 +26,21 @@ export const Heading = () => {
             </div>
 
             <div className="flex flex-col items-start gap-7">
-                <CtaButton label="Vamos trabalhar juntos!" link="https://forms.gle/axz4W7NPY2H5dFBG7" className="h-auto w-[258px] py-3 text-sm" />
+                <CtaButton
+                    label="Vamos trabalhar juntos!"
+                    link="https://forms.gle/axz4W7NPY2H5dFBG7"
+                    className="h-auto w-[258px] py-3 text-sm"
+                />
 
-                <Link href="/formations" target="_blank" className="group flex items-center gap-1 text-sm font-medium text-secondary">
+                <Link
+                    href="/formations"
+                    target="_blank"
+                    className="group flex items-center gap-1 text-sm font-medium text-secondary"
+                >
                     <span>Conheça nossas soluções</span>
                     <ArrowRight
                         size={16}
-                        className="transition-all duration-300 ease-in-out group-hover:translate-x-1 -mb-px"
+                        className="-mb-px transition-all duration-300 ease-in-out group-hover:translate-x-1"
                     />
                 </Link>
             </div>
