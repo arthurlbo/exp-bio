@@ -4,7 +4,10 @@ import { ArrowRight } from "@phosphor-icons/react/dist/ssr";
 
 import { CtaButton } from "@/components";
 
-export const Heading = () => {
+/**
+ * Section that will display the hero of the page.
+ */
+export const Hero = () => {
     return (
         <section className="flex w-full flex-col gap-8">
             <div className="flex flex-col items-start gap-5">

@@ -1,9 +1,9 @@
-import { Footer, Heading, Highlights, Links } from "@/components";
+import { Footer, Hero, Highlights, Links } from "@/components";
 
 export default function Home() {
     return (
         <>
-            <Heading />
+            <Hero />
             <Highlights />
             <Links />
             <Footer />
