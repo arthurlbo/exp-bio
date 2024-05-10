@@ -1,15 +1,17 @@
 ### Hi there! 👋
 
-> A template created to be reused in some projects saving a lot of time and make our lives easier 🤍
+> This project is a link page (similar to Linktree) developed for the marketing agency Exp Marketing, based in Brazil. The primary goal is to showcase the company's useful links along with other pertinent information about their services and expertise.
+>
+> The platform is built using modern technologies, including Next.js for a dynamic user experience, TypeScript for ensuring code security and scalability, and Tailwind CSS for a responsive and elegant design. This technological approach enables seamless integration and an optimized browsing experience for users, reflecting Exp Marketing's innovation and professionalism.
 
 ## What is inside?
 
--   [NextJS](https://nextjs.org/docs)
--   [ReactJS](https://reactjs.org)
+-   [Next.js](https://nextjs.org/docs)
+-   [React.js](https://reactjs.org)
 -   [TypeScript](https://www.typescriptlang.org)
--   [Tailwind](https://tailwindcss.com/)
--   [Framer Motion](https://www.framer.com/motion)
--   [Cypress](https://www.cypress.io/)
+-   [Tailwind CSS](https://tailwindcss.com/)
+-   [Phosphor Icons](https://phosphoricons.com/)
+-   [Ldrs](https://uiball.com/ldrs/)
 -   [Eslint](https://eslint.org)
 -   [Prettier](https://prettier.io)
 -   [Husky](https://github.com/typicode/husky)
@@ -58,51 +60,38 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ## Structure
 
 ```
-└── cypress
-    ├── e2e
 └── src
     ├── app
     ├── assets
     ├── components
+        ├── home
+        ├── ui
     ├── lib
     ├── utils
 ```
 
-| Folder         | Description                                    |
-| -------------- | ---------------------------------------------- |
-| **e2e**        | e2e tests in the app                           |
-| **app**        | Pages                                          |
-| **assets**     | Images and static files for application        |
-| **components** | Pages components                               |
-| **lib**        | Configuration of libraries used in the project |
-| **utils**      | Auxiliary and reusable functions               |
+| Folder             | Description                                    |
+| ------------------ | ---------------------------------------------- |
+| **app**            | Pagens in the project                          |
+| **assets**         | Images and static files for application        |
+| **components**     | Page's components                              |
+| **home**           | Components used in the home page               |
+| **ui**             | Reusable ui components                         |
+| **lib**            | Configuration of libraries used in the project |
+| **utils**          | Auxiliary and reusable functions               |
 
 ## Conventions
 
-### Components
-
-```
-└── <MyComponent>
-    ├── <MyComponent>.tsx
-    ├── <MyComponent>.spec.tsx
-    └── index.ts
-```
-
-| Files         | Description                  |
-| ------------- | ---------------------------- |
-| **.tsx**      | Component implementation     |
-| **.spec.tsx** | Component tests              |
-| **index.ts**  | File to export the component |
+| Files        | Description                   |
+| ------------ | ----------------------------- |
+| **.tsx**     | Component implementation      |
+| **index.ts** | File to export the components |
 
 ## Commands
 
 -   `dev`: run development server
 -   `build`: creates the production build version
--   `lint`: runs the linter in all components and pages
--   `cypress`: open cypress
--   `format`: format the files.
--   `component-test`: run all the component tests.
--   `e2e-test`: run all the e2e tests.
+-   `format`: run prettier and eslint in all the files
 -   `commit`: commit staged changes
 
 <p align="center">Made with 🤍 by Arthur</p>
