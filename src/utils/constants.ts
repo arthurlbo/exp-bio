@@ -6,3 +6,5 @@ export const links = {
 };
 
 export const HEADER_HEIGHT = "72px";
+
+export const MAX_WIDTH = "500px";
