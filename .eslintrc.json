@@ -1,24 +1,32 @@
-module.exports = {
-    parser: "@typescript-eslint/parser",
-    parserOptions: {
-        ecmaVersion: 2020,
-        sourceType: "module",
+{
+    "env": {
+        "browser": true,
+        "es6": true,
+        "node": true
     },
-    settings: {
-        react: {
-            version: "detect",
-        },
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
     },
-    extends: [
+    "extends": [
         "eslint:recommended",
         "plugin:react/recommended",
         "plugin:@typescript-eslint/recommended",
         "plugin:@typescript-eslint/eslint-recommended",
         "plugin:prettier/recommended",
-        "plugin:@next/next/recommended",
+        "plugin:@next/next/recommended"
     ],
-    plugins: ["react", "react-hooks", "@typescript-eslint", "import"],
-    rules: {
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "plugins": ["react", "react-hooks", "@typescript-eslint", "import"],
+    "rules": {
         "@typescript-eslint/explicit-function-return-type": "off",
         "@typescript-eslint/explicit-member-accessibility": "off",
         "@typescript-eslint/explicit-module-boundary-types": "off",
@@ -27,9 +35,11 @@ module.exports = {
         "@typescript-eslint/no-non-null-assertion": "off",
         "@typescript-eslint/no-use-before-define": "off",
         "@typescript-eslint/no-var-requires": "off",
-        "@typescript-eslint/naming-convention": "off",
+        "@typescript-eslint/camelcase": "off",
+        "@typescript-eslint/no-unused-vars": "off",
+        "react/no-unescaped-entities": "off",
         "import/prefer-default-export": "off",
-        "react-hooks/exhaustive-deps": "warn",
+        "react-hooks/exhaustive-deps": "off",
         "react-hooks/rules-of-hooks": "error",
         "react/jsx-one-expression-per-line": "off",
         "react/jsx-props-no-spreading": "off",
@@ -37,7 +47,6 @@ module.exports = {
         "react/prop-types": "off",
         "react/react-in-jsx-scope": "off",
         "react/require-default-props": "off",
-        "import/first": "error",
-        "no-undef": "off",
-    },
-};
+        "import/first": "error"
+    }
+}

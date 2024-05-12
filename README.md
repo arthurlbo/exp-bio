@@ -70,15 +70,15 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
     ├── utils
 ```
 
-| Folder             | Description                                    |
-| ------------------ | ---------------------------------------------- |
-| **app**            | Pagens in the project                          |
-| **assets**         | Images and static files for application        |
-| **components**     | Page's components                              |
-| **home**           | Components used in the home page               |
-| **ui**             | Reusable ui components                         |
-| **lib**            | Configuration of libraries used in the project |
-| **utils**          | Auxiliary and reusable functions               |
+| Folder         | Description                                    |
+| -------------- | ---------------------------------------------- |
+| **app**        | Pagens in the project                          |
+| **assets**     | Images and static files for application        |
+| **components** | Page's components                              |
+| **home**       | Components used in the home page               |
+| **ui**         | Reusable ui components                         |
+| **lib**        | Configuration of libraries used in the project |
+| **utils**      | Auxiliary and reusable functions               |
 
 ## Conventions
 
