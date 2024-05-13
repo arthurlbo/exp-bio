@@ -2,7 +2,6 @@ import "./globals.css";
 
 import { ReactNode } from "react";
 
-import Image from "next/image";
 import { Poppins, MuseoModerno } from "next/font/google";
 
 import { Analytics } from "@vercel/analytics/react";
@@ -11,8 +10,6 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import { HEADER_HEIGHT, MAX_WIDTH } from "@/utils";
 
 import { Header } from "@/components";
-
-import BlurImage from "@/assets/blur.svg";
 
 const poppins = Poppins({ subsets: ["latin"], weight: ["400", "500", "600", "700"], variable: "--font-poppins" });
 
@@ -57,15 +54,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
                 `}
             >
                 <Header />
-
-                <Image
-                    src={BlurImage}
-                    alt="Blur"
-                    quality={100}
-                    priority
-                    className="absolute right-0 top-0 -z-10 h-[600px] w-full opacity-80 xs:right-1/2 xs:translate-x-1/2"
-                    style={{ maxWidth: MAX_WIDTH }}
-                />
 
                 <main
                     className="z-20 flex h-full w-full flex-col justify-between gap-8 px-5 pt-5 xs:border-x xs:border-x-tertiary"

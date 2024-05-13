@@ -2,30 +2,26 @@ import { links } from "@/utils";
 
 import { Card, CardProps } from "./card";
 
-import SiteBanner from "@/assets/links/site.webp";
-import BudgetBanner from "@/assets/links/budget.webp";
-import DoubtsBanner from "@/assets/links/doubts.webp";
-import FormationsBanner from "@/assets/links/formations.webp";
-
 const linksCards: CardProps[] = [
     {
-        alt: "Faça seu orçamento conosco!",
-        cover: BudgetBanner,
+        title: "Contate seu orçamento.",
+        description: "Preencha o Forms e receba uma proposta personalizado.",
         link: "https://forms.gle/axz4W7NPY2H5dFBG7",
     },
     {
-        alt: "Conheça nosso site!",
-        cover: SiteBanner,
+        title: "Conheça nosso site.",
+        description: "Conheça mais sobre nossos serviços e nossa história.",
+        customDescriptionStyle: "max-w-[270px]",
         link: "/formations",
     },
     {
-        alt: "Conheça nossas formações!",
-        cover: FormationsBanner,
+        title: "Formações Online!",
+        description: "Acesse nossas formações online e aprenda mais sobre o mundo digital.",
         link: "/formations",
     },
     {
-        alt: "Alguma dúvida? Fale conosco!",
-        cover: DoubtsBanner,
+        title: "Alguma dúvida? Fale conosco.",
+        description: "Estamos disponíveis para tirar suas dúvidas e ajudar no que for preciso.",
         link: links.whatsapp,
     },
 ];
