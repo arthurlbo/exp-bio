@@ -11,7 +11,6 @@
 -   [TypeScript](https://www.typescriptlang.org)
 -   [Tailwind CSS](https://tailwindcss.com/)
 -   [Phosphor Icons](https://phosphoricons.com/)
--   [Ldrs](https://uiball.com/ldrs/)
 -   [Eslint](https://eslint.org)
 -   [Prettier](https://prettier.io)
 -   [Husky](https://github.com/typicode/husky)

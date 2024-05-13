@@ -1,31 +1,23 @@
-"use client";
-
 import Link from "next/link";
 
-import { bouncy } from "ldrs";
-import { ArrowLeft } from "@phosphor-icons/react";
-
-bouncy.register();
+import { ArrowLeft } from "@phosphor-icons/react/dist/ssr";
 
 /**
  * Component that will display a working page while the page is under construction.
  */
 export const Working = () => {
     return (
-        <div className="z-10 flex h-full w-full flex-col items-center justify-center gap-16">
-            <l-bouncy size="60" speed="1.75" color="#00EAFF"></l-bouncy>
+        <div className="flex w-full flex-1 flex-col items-center justify-center gap-6">
+            <h1 className="text-2xl font-medium text-primary">Trabalho em progresso!</h1>
 
-            <div className="flex w-full flex-col items-center gap-6">
-                <h1 className="text-2xl font-medium text-primary">Trabalho em progresso!</h1>
+            <h2 className="text-center text-base font-normal text-secondary">
+                Estamos melhorando esta página para torná-la ainda mais incrível. Em breve, estará pronta para você
+            </h2>
 
-                <h2 className="text-center text-base font-normal text-secondary">
-                    Estamos melhorando esta página para torná-la ainda mais incrível. Em breve, estará pronta para você
-                </h2>
-
-                <Link
-                    href="/"
-                    role="button"
-                    className="
+            <Link
+                href="/"
+                role="button"
+                className="
                         mt-6
                         flex
                         w-3/4
@@ -48,13 +40,12 @@ export const Working = () => {
                         focus:ring-offset-2
                         focus:ring-offset-background
                     "
-                >
-                    <div className="flex h-full w-full items-center justify-center gap-2 rounded-xl bg-background py-3 text-sm font-semibold text-primary">
-                        <ArrowLeft size={16} />
-                        Voltar
-                    </div>
-                </Link>
-            </div>
+            >
+                <div className="flex h-full w-full items-center justify-center gap-2 rounded-xl bg-background py-3 text-sm font-semibold text-primary">
+                    <ArrowLeft size={16} />
+                    Voltar
+                </div>
+            </Link>
         </div>
     );
 };
