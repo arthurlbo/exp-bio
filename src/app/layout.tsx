@@ -5,6 +5,9 @@ import { ReactNode } from "react";
 import Image from "next/image";
 import { Poppins, MuseoModerno } from "next/font/google";
 
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+
 import { HEADER_HEIGHT, MAX_WIDTH } from "@/utils";
 
 import { Header } from "@/components";
@@ -74,6 +77,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
                 >
                     {children}
                 </main>
+
+                <Analytics />
+                <SpeedInsights />
             </body>
         </html>
     );
