@@ -1,5 +1,7 @@
 import "./globals.css";
 
+import { ReactNode } from "react";
+
 import Image from "next/image";
 import { Poppins, MuseoModerno } from "next/font/google";
 
@@ -25,7 +27,7 @@ export const metadata = {
         "Exp Marketing, Marketing, Agência de Marketing, Marketing Digital, Estética, Marketing Médico, Clínica, Marketing para clínica, Marketing para estética, Marketing para médicos, Marketing para dentistas",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({ children }: { children: ReactNode }) {
     return (
         <html lang="en">
             <body
@@ -63,8 +65,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 />
 
                 <main
-                    className="flex w-full flex-col justify-between gap-8 px-5 pt-5 xs:border-x xs:border-x-tertiary"
-                    style={{ marginTop: HEADER_HEIGHT, height: `calc(100% - ${HEADER_HEIGHT})`, maxWidth: MAX_WIDTH }}
+                    className="z-20 flex h-full w-full flex-col justify-between gap-8 px-5 pt-5 xs:border-x xs:border-x-tertiary"
+                    style={{
+                        marginTop: HEADER_HEIGHT,
+                        minHeight: `calc(100vh - ${HEADER_HEIGHT})`,
+                        maxWidth: MAX_WIDTH,
+                    }}
                 >
                     {children}
                 </main>
