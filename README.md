@@ -1,6 +1,6 @@
 ### Hi there! 👋
 
-> This project is a link page (similar to Linktree) developed for the marketing agency Exp Marketing, based in Brazil. The primary goal is to showcase the company's useful links along with other pertinent information about their services and expertise.
+> This project is a instagram's bio page (similar to Linktree) developed for a multinational marketing agency [Exp Marketing](https://www.instagram.com/expmarketing.br/). The primary goal is to showcase the company's useful links along with other pertinent information about their services and expertise.
 >
 > The platform is built using modern technologies, including Next.js for a dynamic user experience, TypeScript for ensuring code security and scalability, and Tailwind CSS for a responsive and elegant design. This technological approach enables seamless integration and an optimized browsing experience for users, reflecting Exp Marketing's innovation and professionalism.
 
