@@ -36,6 +36,10 @@ export const Card = ({ customDescriptionStyle, description, link, title }: CardP
                 rounded-2xl
                 border
                 border-tertiary
+                transition-all
+                duration-300
+                ease-in-out
+                hover:border-[#403e46]
                 focus:outline-none
                 focus:ring-2
                 focus:ring-white
@@ -58,7 +62,7 @@ export const Card = ({ customDescriptionStyle, description, link, title }: CardP
                     transition-all
                     duration-300
                     ease-in-out
-                    group-hover:bg-background/30
+                    group-hover:bg-background/20
                 "
             >
                 <h1 className="text-xl font-semibold text-primary">{title}</h1>
@@ -85,6 +89,12 @@ export const Card = ({ customDescriptionStyle, description, link, title }: CardP
                     from-accent
                     to-complementary
                     text-primary
+                    transition-all
+                    duration-300
+                    ease-in-out
+                    group-hover:scale-110
+                    group-hover:shadow-lg
+                   group-hover:shadow-accent/30
                 "
             >
                 <ArrowRight size={16} className="transition-all duration-200 ease-in-out group-hover:-rotate-45" />
